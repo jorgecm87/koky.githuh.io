@@ -41,3 +41,9 @@ color: blue;
 
 }
     
+.class_float_right {
+    float: right;
+    background-color: rgb(117, 176, 211);
+    margin: 5px;
+  }
+  
