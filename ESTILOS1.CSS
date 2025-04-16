@@ -6,7 +6,7 @@ h2 { /*ESTE ESTILO AFECTA A TODOS LOS H2 DEL INDEX2.HTML */
 
 .textomorado {  /* clases css que aplica color morado y fuente lucidaSans */
     color: blueviolet;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva' , Verdana, sans-serif;
 }
 
 
@@ -40,10 +40,197 @@ font-size: 50px;
 color: blue;
 
 }
+.clase_Static {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    margin-top: 0px;
+   margin-left:20px ;
+   margin-right:80px; 
+}
+
+.clase_Static2 {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    top: 20px;  /* esto no funciona en static */
+    left:80px ;  /* esto no funciona en static */
+    right:200px;  /* esto no funciona en static */
     
+}
+
+.clase_Relative{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative:hover {
+    position:relative; 
+    top: 100px;
+    left: 100px;
+    z-index: -5;
+    /* z-index para colocar adelante o atras en profundidad respecto a otro elemento  */
+}
+
+.clase_Relative2{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative2:hover {
+    position:relative; 
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+}
+
+.clase_absolute {
+    font-size: 20px;
+    background-color:chartreuse ;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 500px; /*posicion imagen texto de arriba hacia abajo*/
+    left: 100 px ;
+    z-index: -10;
+
+}
+
+.clase_Relative3 {
+    font-size: 20px;
+    background-color:chartreuse ;
+    height: 250px;
+    width: 200px;
+    position: relative;
+
+}
+
+.clase_AbsoluteRelative {
+    font-size: 20px;
+    background-color:chartreuse ;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    bottom: 300px;/*posicion imagen-texto de abajo hacia arriba*/
+    left: 600px;
+    z-index:-5; /*sirve para colocar la imagen detras de texto*/
+
+    }
+
+/*clase_fixed , sirve para que la imagen quede de manera estatica en la navegacion sobre la pestaña*/
+.clase_fixed {
+    height: 200px;
+    width: 150px;
+    position: fixed;
+    left: 500px;
+    bottom: 300px;
+
+}
+
+/*es como la clase fixed de estatica pero controlas lo opaco de la imagen haciendola una marca de agua de la ventana*/
+.clase_marcaagua {
+    opacity:0.4;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.clase_sticky {
+    position:sticky;
+    font-size: 40 px;
+    top: 0px;
+    left: 30px;
+    height: 400px;
+    
+}
+
+
 .class_float_right {
     float: right;
     background-color: rgb(117, 176, 211);
     margin: 5px;
-  }
+
+
+}
+
+.bloque { /*estilo display por defecto */
+    background-color: aqua;
+    font-size: 20px;
+    margin: 20px;
+    color: beige;
+
+}
+
+.tipoinlineblock { /*estilo display inline-block*/
+
+    background-color: aqua;
+    font-size: 30px;
+    margin: 10px;
+    color: blue;
+    display: inline-block;
+    width: 500px;
+
+}
+
+.enlinea { /*estilo display inline*/
+
+    background-color: rgb(211, 128, 117);
+    display: inline;
+    font-size: 30px;
+    margin: 2px;
+    color: brown;
+    width: 80px;
+    height: 40px;
+
+}
   
+.tiponone {
+
+    background-color: blue;
+    font-size: 20px;
+    margin: 20px;
+    color: aqua;
+    display: none;
+
+}
+
+
+.tipohidden {
+
+    background-color: blue;
+    font-size: 20px;
+    margin: 20px;
+    color: aquamarine;
+    visibility: hidden;
+    
+}
+
+.tipoflex {
+
+    display: flex;
+    background-color: rgb(129, 127, 255);
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.claseNav {
+    background-color: aqua;
+    font-size: 30px;
+    align-items: center;
+    padding-inline: 0px;
+    color: black;
+    display: inline;
+    list-style-type: none;
+
+
+}
+
+
+.claseNav  a:hover {
+    background-color: brown;
+    
+
+}
