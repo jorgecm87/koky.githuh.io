@@ -244,11 +244,11 @@ las doscientas millas, de conformidad con la ley y
   <div>
   
     <img class="clase_fixed clase_marcaagua "
-       style="border:9px dotted ; color:rgb(253, 55, 29)"
-        src="c:\Users\LAB01-NORTE\Downloads\imagen\imagen3.jpg
-        " 
+       style="border:100px dotted ; color:rgb(253, 55, 29)"
+        src="C:\Users\LAB03-NORTE\Pictures\Screenshots\Captura de pantalla 2025-04-19 190816.png"
+        
                alt="IMAGEN NO DISPONIBLE"
-        width="400"       height="341"      >
+        width="800"       height="500"      >
     </div>
 <!--La imagen flotante cubrira el contenido como una ventana flotante hasta cierto punto de la pagina--> -->
     <h2  >POSICIONAMIENTO STICKY </h2>
@@ -256,7 +256,7 @@ las doscientas millas, de conformidad con la ley y
   
     <img class="clase_sticky "
        style="border:9px dotted ; color:rgb(253, 55, 29)"
-        src="c:\Users\LAB01-NORTE\Downloads\imagen\imagen4.jpg" 
+        src="C:\Users\LAB03-NORTE\Pictures\Screenshots\Captura de pantalla 2025-04-19 190816.png" 
                alt="IMAGEN NO DISPONIBLE"
         width="300"       height="400"      >
 
@@ -322,15 +322,99 @@ las doscientas millas, de conformidad con la ley y
      Establecer y mantener un Sistema de Gestión de la Calidad basado en el cumplimiento de la norma ISO 9001:2015 y la legislación vigente.
      Proporcionar a los trabajadores capacitación y recursos necesarios para lograr los objetivos trazados.</p>
 
-   <a href="#POSICIONINICIAL"> VOLVER AL INICIO</a>  
+   <a href="#POSICIONINICIAL"> VOLVER AL INICIO</a> 
+   
+   <h2>FORMULARIO DE REGISTRO </h2>
 
-
-
-
-
-
-
-
-</body>
-
-</html>
+   <form action= "TODOSOBREMI.html" method="post">
+     <p><label for="nombre">Nombre: <input type="text" id="nombre"></label></p>
+     <p><label for="apellido">Apellido: <input type="text" id="apellido"></label></p>
+     <p><label for="edad">Edad: <input type="number" id="edad" min="18" max="80"></label></p>
+   
+   <p><label for="observacion"> Observacion:
+             <textarea name="observacion" id="observacion" 
+               style="height: 180px; width: 300px; font-size: 15px;">
+             </textarea>
+         </label>
+   </p>
+   
+   <p>
+       <label for="estatura">Estatura  <!--formulario de desglosable-->
+           <select name="grupoestatura" id="estatura">
+             <option value="Seleccione"> Seleccione su Estatura</option>
+               <option value="Menor a 1.50m"> Menor a 1.50m </option>
+               <option value="De 1.50m a 1.59m">De 1.50m a 1.59m</option>
+               <option value="De 1.60m a 1.69m">De 1.60 a 1.69m </option>
+               <option value="Mayor/Igual a 1.70m"> Mayor/Igual a 1.70m </option>
+   
+   
+           </select>
+       </label>
+   </p>
+   
+   <p> <label > CURSOS LLEVADOS </label>  <!--formulario en lista para marcar opciones-->
+     <br>
+       <input type="checkbox" name="cursos" value="Matematica" id="Matematica" >
+         <label for="Matematica"> Matematica </label> <br>
+       <input type="checkbox" name="cursos" value="Lenguaje DSS" id="LDSS" >
+         <label for="LDSS">Lenguaje DSS </label> <br>
+       <input type="checkbox" name="cursos" value="Introduccion a la investigacion" id="INTRO_INV">
+         <label for="INTRO_INV">Introduccion a la investigacion </label> <br>
+       <input type="checkbox" name="cursos" value="Nuevas tendencias" id="Nuevas_Tendencias">
+         <label for="Nuevas_Tendencias">Nuevas tendencias </label>  <br>
+   
+   
+   
+   </p>
+   
+   <!--codigo para fecha(Con este codigo se selecciona fecha de calendario):-->
+   <label for="fecha"> SELECCIONE FECHA:
+     <input style="font: size 22px" type="date" name="fecha" id="fecha">
+   </label>
+   <br><br>
+   
+   <!--codigo para claves - contraseñas-->
+   <label for="clave"> SELECCIONE CLAVE: 
+     <input style="font: size 15px;" type="password" name="clave" id="clave" autofocus>
+   </label>
+   <br><br>
+   
+   <!--clave para crear un boton de limpiar todo-->
+   <label for="resetear"> RESETEAR:
+     <input style="font-size:15px;" type="reset" name="resetear" id="resetear">
+   </label>
+   
+   <!--clave para agregar hora-->
+   <br>
+   <input type="time" name="time">
+   <br>
+   
+   <!--Un campo que permite al usuario elegir un archivo
+   para cargar-->
+   <br>
+   <input type="file" id="file">
+   <br>
+   
+   <!--Un campo para ingresar una dirección de correo
+   electrónico-->
+   <label for="email">Correo Electrónico:</label>
+   <!-- El @ está predefinido en el campo de correo -->
+   <input type="email" id="email" name="email" value="@certus.edu.pe" required><br><br>
+   
+   
+   
+   
+   
+   
+   
+   <!--codigo del button-->
+   <br><br>
+   <button type="submit" style="font: size 15px;" > enviar </button>
+   
+   </form>
+   
+   
+   
+   
+   </body>
+   </html>
