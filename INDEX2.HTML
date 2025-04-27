@@ -5,8 +5,14 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="ESTILOS1.CSS">
+     <script type="text/javascript" src="SCRIPT1.js"></script>
+
+
      <title>INSTITUTO CERTUS - PAGINA CON CSS</title>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+
 
 <body style="background-color: bisque; margin: auto; width: 1200px;"></body>
  <h3> HOLA JORGE </h3>     
@@ -245,7 +251,7 @@ las doscientas millas, de conformidad con la ley y
   
     <img class="clase_fixed clase_marcaagua "
        style="border:100px dotted ; color:rgb(253, 55, 29)"
-        src="C:\Users\LAB03-NORTE\Pictures\Screenshots\Captura de pantalla 2025-04-19 190816.png"
+        src="C:\Users\LAB08-NORTE\Documents\GitHub\koky.githuh.io\imagenes\rav 4.jpg"
         
                alt="IMAGEN NO DISPONIBLE"
         width="800"       height="500"      >
@@ -412,9 +418,56 @@ las doscientas millas, de conformidad con la ley y
    <button type="submit" style="font: size 15px;" > enviar </button>
    
    </form>
+
+
+   <div style="font-size: 30px;"> contenedor resultado en java script 
+   <div id="resultado" style="font-size: 30px;"> 
+  <p> operacion suma </p>  
+  </div>
+
+</div>
+  <!--sirve para mostra un mensaje al actualizar la pagina -->
+  <script> // script es un codigo para iniciar lenguaje java
+ alert("bienvenido Jorgito"); // comando de windows
+/*usar para hacer comentario dentro de java*/
+ var valor1 = 80;
+ var valor2 = 50;
+ var suma = valor1 +valor2;
+ var resta = valor1 -valor2;
+ var multiplicacion = valor1 *valor2;
+ var division = valor1 /valor2;
+
+ document.write("<br> <br><br> fin de pagina"); // realiza al ultimo del script
+
+ console.log("el valor de resta ",valor1,"con",valor2,"es:",resta);
+ console.log("el valor de multiplicaacion ",valor1,"con",valor2,"es:",multiplicacion);
+ console.log("el valor de division ",valor1,"con",valor2,"es:",division);
+document.getElementById("resultado") .innerHTML="resultado suma ="+suma;
+
+
+
+</script>  
+<section>
+<h1 style="font-size:40px ;">MANIPULACION DEL DOM</h1>
+ <P id="ejmDOM1" style="font-size: 25px;">
+este es un texto inicial a aplicar DOM
+ </P>
+
+ <button style="font-size: 25px;"
+   onclick="FCambioColor()"> cambio color 
+  
+
    
-   
-   
-   
+ </button>
+
+
+</section>
+
+
+
+
+
+
+
    </body>
    </html>
