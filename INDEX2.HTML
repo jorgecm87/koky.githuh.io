@@ -11,10 +11,12 @@
      <title>INSTITUTO CERTUS - PAGINA CON CSS</title>
 </head>
 <!DOCTYPE html>
+<body html></body>
 <html lang="en">
+<head></head>
 
 
-<body style="background-color: bisque; margin: auto; width: 1200px;"></body>
+<body style="background-color: rgb(196, 248, 255); margin: auto; width: 1200px;"></body>
  <h3> HOLA JORGE </h3>     
      <p> Curso : Lenguaje de Desarrollo y Soporte de Sistemas </p>
      <!--  stage changed sirve para preparar el cambio en desktop y commit para confirmar en desktop  -->
@@ -178,7 +180,7 @@
     en un bloque inline -----------------------------------</P>
   <img class="clase_Relative"
      style="border:9px dotted ; color:rgb(253, 55, 29)"
-      src="c:\Users\LAB01-NORTE\Downloads\imagen\imagen1.jpg" 
+      src="C:\Users\LAB01-NORTE\Documents\GitHub\koky.githuh.io\imagenes\yaris.jpg" 
              alt="IMAGEN NO DISPONIBLE"
       width="400"       height="341"      >
   </div>
@@ -251,7 +253,7 @@ las doscientas millas, de conformidad con la ley y
   
     <img class="clase_fixed clase_marcaagua "
        style="border:100px dotted ; color:rgb(253, 55, 29)"
-        src="C:\Users\LAB08-NORTE\Documents\GitHub\koky.githuh.io\imagenes\rav 4.jpg"
+        src="C:\Users\LAB01-NORTE\Documents\GitHub\koky.githuh.io\imagenes\yaris.jpg"
         
                alt="IMAGEN NO DISPONIBLE"
         width="800"       height="500"      >
@@ -438,7 +440,7 @@ las doscientas millas, de conformidad con la ley y
  var division = valor1 /valor2;
 
  document.write("<br> <br><br> fin de pagina"); // realiza al ultimo del script
-
+ //console log , sirve para que el programador pueda utilizar borrador y no afecte la pagina web
  console.log("el valor de resta ",valor1,"con",valor2,"es:",resta);
  console.log("el valor de multiplicaacion ",valor1,"con",valor2,"es:",multiplicacion);
  console.log("el valor de division ",valor1,"con",valor2,"es:",division);
@@ -446,19 +448,29 @@ document.getElementById("resultado") .innerHTML="resultado suma ="+suma;
 
 
 
-</script>  
+</script> 
+
+ <!--sirve para llamar a la funcion cambio de color -->
+
 <section>
 <h1 style="font-size:40px ;">MANIPULACION DEL DOM</h1>
  <P id="ejmDOM1" style="font-size: 25px;">
 este es un texto inicial a aplicar DOM
  </P>
+ 
+<p class="classDOM1" style="font-size: 25px;"> texto 1 de classDOM1</p>
+<p class="classDOM1" style="font-size: 25px;"> texto 2 de classDOM1</p>
+<h2 class="classDOM1" style="font-size: 25px;"> texto 3 de classDOM1 y tag h2</h2>
 
+
+ <!--esta funciona sirve para con un click cambia de color palabras , pára eso tenemos que trabajar en javascript -->
  <button style="font-size: 25px;"
-   onclick="FCambioColor()"> cambio color 
-  
+   onclick="FCambioColor()"> cambio color por ID  </button>
+   <button style="font-size: 25px;"
+   onclick="FCambioClase1()"> cambio por clase   </button>
+   <button style="font-size: 25px;"
+   onclick="FCambioTag1()"> cambio por TAG h2     </button>
 
-   
- </button>
 
 
 </section>
