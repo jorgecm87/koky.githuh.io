@@ -41,12 +41,58 @@ function FCambioClase1(){
 function FCambioTag1(){
     let vtexto3=document.getElementsByTagName("h2");
     vtexto3[0].innerHTML="elemento 1er h2 cambiado por TagDOM1";
-    vtexto3[20].innerHTML="elemento ultimo h2 cambiado por TagDOM1";
-    vtexto3[20].style.color="magenta";
-    // se coloca el indice 20 por ser el 21 elemento h2 de la pag web index.html
+    vtexto3[0].style.color="magenta";
+    vtexto3[21].innerHTML="elemento ultimo h2 cambiado por TagDOM1";
+    vtexto3[21].style.color="magenta";
+    // se coloca el indice 21 por ser el 22 elemento h2 de la pag web index.html
+    console.log("tamaño del array=",vtexto3.length);
+    vtexto3[21].insertAdjacentHTML("beforeEnd", "<br>tamaño de h2 ="+ vtexto3.length);
+
+let totalh2=vtexto3.length;
+    console.log("Valor de totalh2=",totalh2);
+    console.log("tipo de variable totalh2=", typeof totalh2);
 
 } 
 
+window.vTexto1="";
+
+function FAgregarTextoPermanente()
+
+{
+    let textoadicional ="\ntexto adicional para concatenar";
+    vTexto1.innerHTML=vTexto1.innerHTML + textoadicional;
+    console.log("tipo de variable de vtxto1=",typeof vTexto1);
+   console.log(vTexto1);
+    
 
 
 
+}
+ function FcrearH1()
+ {
+    var elemento =document.getElementById("idCrearH1");
+    var nuevoH1 =document.createElement("H1");
+    var texto = document.createTextNode("texto colocado dinamicamente");
+    nuevoH1.appendChild(texto);
+    elemento.appendChild(nuevoH1);
+ }
+
+ function FCapturarNombre(){
+
+    const vTexto1 = document.getElementById("nombre");
+    const vTexto2 = document.querySelectorAll("input.datosPersonales");
+   // usar input para clases relacioandas a cajas de texto, etc
+    vTexto1.style.color="red";
+    
+    var valor1 =vTexto1.value; // value obtiene el contenido de la caja de texto nombre
+    var valor2 ="";
+
+    document.getElementById("observacion").value = valor1;//textarea ya captura el nombre
+   //foreach recorre todo el contenido del array de la clase datosPersonales
+    vTexto2.forEach(input => {
+        valor2 =valor2 + `${input.name}: ${input.value}\n`;
+      });
+
+    document.getElementById('observacion').value = valor2;
+    console.log('El valor del nombre es:', valor1);
+}

@@ -335,9 +335,9 @@ las doscientas millas, de conformidad con la ley y
    <h2>FORMULARIO DE REGISTRO </h2>
 
    <form action= "TODOSOBREMI.html" method="post">
-     <p><label for="nombre">Nombre: <input type="text" id="nombre"></label></p>
-     <p><label for="apellido">Apellido: <input type="text" id="apellido"></label></p>
-     <p><label for="edad">Edad: <input type="number" id="edad" min="18" max="80"></label></p>
+     <p><label for="nombre">Nombre: <input type="text" id="nombre"class="datos personales" ></label></p>
+     <p><label for="apellido">Apellido: <input type="text" id="apellido" class="datos personales" ></label></p>
+     <p><label for="edad">Edad: <input type="number" id="edad" class="datos personales"  min="18" max="80"></label></p>
    
    <p><label for="observacion"> Observacion:
              <textarea name="observacion" id="observacion" 
@@ -405,16 +405,18 @@ las doscientas millas, de conformidad con la ley y
    
    <!--Un campo para ingresar una dirección de correo
    electrónico-->
-   <label for="email">Correo Electrónico:</label>
+   <label for="email">Correo Electrónico:
    <!-- El @ está predefinido en el campo de correo -->
    <input type="email" id="email" name="email" value="@certus.edu.pe" required><br><br>
+  </label>
    
    
    
    
    
    
-   
+   <button style="font-size: 30px;" type="button"
+   onclick="FCapturarNombre()"> COPIAR NOMBRE A OBSERVACIONES</button>
    <!--codigo del button-->
    <br><br>
    <button type="submit" style="font: size 15px;" > enviar </button>
@@ -471,11 +473,22 @@ este es un texto inicial a aplicar DOM
    <button style="font-size: 25px;"
    onclick="FCambioTag1()"> cambio por TAG h2     </button>
 
+<h2> AGREGACION DE TEXTO CON CONCATENACION PERMANENTE</h2>
 
+<button onclick="FAgregarTextoPermanente()"> agregar texto a primera variable</button>
+
+
+</section >
+
+
+
+<h2> USO DE CREATE ELEMENT </h2>
+
+<section id="idCrearH1">
+
+<button onclick="FcrearH1()"> CREAR H1 </button>
 
 </section>
-
-
 
 
 
