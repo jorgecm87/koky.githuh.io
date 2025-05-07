@@ -10,21 +10,17 @@
 
      <title>INSTITUTO CERTUS - PAGINA CON CSS</title>
 </head>
-<!DOCTYPE html>
-<body html></body>
-<html lang="en">
-<head></head>
 
-
-<body style="background-color: rgb(196, 248, 255); margin: auto; width: 1200px;"></body>
- <h3> HOLA JORGE </h3>     
-     <p> Curso : Lenguaje de Desarrollo y Soporte de Sistemas </p>
+<section>
+<body style="background-color: rgb(196, 248, 255); margin: auto; width: 1200px;">
+ <h1 style="background-color: blue;" > HOLA JORGE </h1>     
+     <p style="color: brown;"> Curso : Lenguaje de Desarrollo y Soporte de Sistemas </p>
      <!--  stage changed sirve para preparar el cambio en desktop y commit para confirmar en desktop  -->
-     <h1 style="background-color: rgb(51, 97, 82);"> PAGINA CON CSS </h1>
+     <h2 style="background-color: rgb(51, 97, 82);"> PAGINA CON CSS </h2>
 
 <a id="POSICIONINICIAL"></a>
 
-     <h2> USO DE MENUS con contenedor NAV </h2>
+     <h2> Uso de menu con contenedor NAV </h2>
 
   <nav class="claseNav">
      <a class="claseNav"  href="https://www.digemid.minsa.gob.pe/webDigemid/" target="_blank"> INICIO</a>
@@ -35,12 +31,16 @@
      
 
   </nav>
+</section>
+<section>
      <ol>
           <li>Leche</li>
           <li>Cafe</li>
           <li>Jugo</li>
      </ol>
      <p> Este es un parrafo<br>con una etiqueta br que es un elemento HTML vacio. </p>
+</section>
+<section>
 
      <h1> Sesion Jueves <br>
           Semana2 </h1>
@@ -71,6 +71,8 @@
 
      <img src="https://cdn.pixabay.com/photo/2016/05/07/01/16/andorra-1376977_1280.png" alt="imagen no disponible"
           width="300px" height="300px">
+</section>
+<section>
 
      <!-- SESION VIERNES 04-04 -->
      <p> Imagen local de carpeta imagenes </p>
@@ -92,7 +94,7 @@
           </tr>
 
           <tr> <!-- fila de registro 1 -->
-               <td> LENGUAJE DE DSS </td>
+               <td> LENGUAJE DE CSS </td>
                <td> 7.5 </td>
                <td> JHON BRAVO </td>
 
@@ -105,17 +107,23 @@
 
           </tr>
      </table>
+</section>
+<section>
 
      <h2 class="textomorado"> USO DE BLOQUE EN LINEA </h2>
      <br>
      <div style="background-color: brown;"> Bienvenido Certus </div>
 
      <p> Carrera de TI en <span style="background-color: blueviolet;"> CERTUS </span></p>
+</section>
+<section>
 
 
      <h2 class="textomorado"> USO DE VIDEO LOCAL </h2>
 
      <video src="Video2.mp4" controls autoplay height="300px" width="300px"> VIDEO NO DISPONIBLE </video>
+</section>
+<section>
 
 
      <h2> USO DE VIDEO DESDE YOUTUBE </h2>
@@ -124,6 +132,7 @@
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </section>
 
      <h2> USO DE AUDIO </h2>
      <audio src="musica1.mp3" controls loop autoplay> AUDIO NO SOPORTADO </audio>
@@ -335,9 +344,9 @@ las doscientas millas, de conformidad con la ley y
    <h2>FORMULARIO DE REGISTRO </h2>
 
    <form action= "TODOSOBREMI.html" method="post">
-     <p><label for="nombre">Nombre: <input type="text" id="nombre"class="datos personales" ></label></p>
-     <p><label for="apellido">Apellido: <input type="text" id="apellido" class="datos personales" ></label></p>
-     <p><label for="edad">Edad: <input type="number" id="edad" class="datos personales"  min="18" max="80"></label></p>
+     <p><label for="nombre">Nombre: <input type="text" name="nombre" id="humberto"class="datospersonales" required ></label></p>
+     <p><label for="apellido">Apellido: <input type="text" name="apellido" id="mendoza" class="datospersonales" ></label></p>
+     <p><label for="edad">Edad: <input type="number" name="edad" id="años" class="datospersonales"  min="18" max="80"></label></p>
    
    <p><label for="observacion"> Observacion:
              <textarea name="observacion" id="observacion" 
@@ -419,14 +428,14 @@ las doscientas millas, de conformidad con la ley y
    onclick="FCapturarNombre()"> COPIAR NOMBRE A OBSERVACIONES</button>
    <!--codigo del button-->
    <br><br>
-   <button type="submit" style="font: size 15px;" > enviar </button>
+   <button type="submit" style="font: size 30px;" > enviar </button>
    
    </form>
 
 
    <div style="font-size: 30px;"> contenedor resultado en java script 
    <div id="resultado" style="font-size: 30px;"> 
-  <p> operacion suma </p>  
+ 
   </div>
 
 </div>
@@ -441,12 +450,18 @@ las doscientas millas, de conformidad con la ley y
  var multiplicacion = valor1 *valor2;
  var division = valor1 /valor2;
 
- document.write("<br> <br><br> fin de pagina"); // realiza al ultimo del script
+ document.write("<br> <br><br><br><br> <br><br><br><br>fin de pagina"); // realiza al ultimo del script
  //console log , sirve para que el programador pueda utilizar borrador y no afecte la pagina web
+ console.log("el valor de suma ",valor1,"con",valor2,"es:",suma);
  console.log("el valor de resta ",valor1,"con",valor2,"es:",resta);
  console.log("el valor de multiplicaacion ",valor1,"con",valor2,"es:",multiplicacion);
  console.log("el valor de division ",valor1,"con",valor2,"es:",division);
 document.getElementById("resultado") .innerHTML="resultado suma ="+suma;
+document.getElementById("resultado1") .innerHTML="resultado resta ="+resta;
+document.getElementById("resultado2") .innerHTML="resultado multiplicacion ="+multiplicacion;
+document.getElementById("resultado3") .innerHTML="resultado division ="+division;
+
+document.write("<div style =background-color:#776199;> bienvenido jorgito</div");
 
 
 
@@ -488,6 +503,23 @@ este es un texto inicial a aplicar DOM
 
 <button onclick="FcrearH1()"> CREAR H1 </button>
 
+</section>
+
+<section>
+  
+
+    <h2> USO DE FOR clasico y condicionales en una class </h2>
+  
+     <p class="classFOR1" style="font-size:25px ;">Texto 1 de classFOR1 [0]</p> 
+      <p class="classFOR1" style="font-size:25px ;">Texto 2 de classFOR1[1]</p>
+      <h2 class="classFOR1" style="font-size:25px ;">Texto 3 de classFOR1[2]</h2>
+      <h3 class="classFOR1" style="font-size:25px ;">Texto 4 de classFOR1[3]</h3>
+  
+      <button style="font-size:25px ;" onclick="FUsoFor1()">
+         Reporte de classFOR1</button>
+      <button style="font-size:25px ;" onclick="FEliminarConcat()">
+          Eliminar concatenacion</button>   
+  
 </section>
 
 
